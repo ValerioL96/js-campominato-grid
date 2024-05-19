@@ -1,0 +1,34 @@
+
+.flex{
+    display: flex;   
+}
+
+
+header{
+    height: 100px;
+    justify-content: space-between;
+}
+
+header>img{
+    padding: .5rem 3rem;
+}
+
+header>button{
+    margin: 2rem 3rem;
+    padding: .5rem 3rem;
+    
+}
+
+body{
+    
+    background-color: blue;
+    color: white;
+}
+
+
+
+.grid-active{
+    border: solid white;
+    height: 600px;
+    width: 600px;
+}
