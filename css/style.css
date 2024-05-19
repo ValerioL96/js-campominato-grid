@@ -5,6 +5,7 @@
 
 
 header{
+    background-color: white;
     height: 100px;
     justify-content: space-between;
 }
@@ -19,8 +20,8 @@ header>button{
     
 }
 
-body{
-    
+main{
+    height: calc(100vh - 100px);
     background-color: blue;
     color: white;
 }
@@ -38,4 +39,8 @@ body{
     height: calc(100% / 10);
     width: calc(100% / 10);
     border: solid white;
+}
+
+.cell-active{
+    background-color: aqua;
 }

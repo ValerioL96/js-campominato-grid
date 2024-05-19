@@ -31,6 +31,15 @@ bottone.addEventListener('click', function(){
 
               cellEl.classList.add('cell');
 
+              
+              //Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
+
+                 //- creo una funzione che mi permette di colorare la casella quando ci clicco sopra.
+
+                 cellEl.addEventListener('click', function(){
+                    cellEl.classList.add('cell-active');
+                 })
+
               //- lo aggiungo ad un nodo parents che è quello della griglia.
     
               gridEl.appendChild(cellEl);
