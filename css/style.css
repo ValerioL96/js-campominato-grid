@@ -25,10 +25,17 @@ body{
     color: white;
 }
 
-
-
 .grid-active{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
     border: solid white;
     height: 600px;
     width: 600px;
+}
+
+.cell{
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+    border: solid white;
 }

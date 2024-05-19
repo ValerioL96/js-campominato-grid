@@ -15,7 +15,29 @@ bottone.addEventListener('click', function(){
     const gridEl = document.querySelector('section#grid');
     gridEl.classList.add('grid-active');
 
+      //Ogni cella ha un numero progressivo, da 1 a 100. Ci saranno quindi 10 caselle per ognuna delle 10 righe.
+
+      //4) Creo un ciclo for con indice uguale a 1 che sia minore uguale di 100 e che aumenti ogni volta di 1.
+
+      for(let i= 1 ; i <= 100; i++){
+      
+          //5) Creo un elemento per le caselle:
+
+          const cellEl = document.createElement('article');
+
+          //6) aggiungo le caratteristiche che mi servono:
+
+              //- collego l'elemento ad una classe creata con css.
+
+              cellEl.classList.add('cell');
+
+              //- lo aggiungo ad un nodo parents che è quello della griglia.
     
+              gridEl.appendChild(cellEl);
+        }
+      
+
+
     
 })
 
