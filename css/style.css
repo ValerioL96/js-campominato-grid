@@ -68,17 +68,33 @@ section#grid > article.cell{
 section#grid > article.cell.easy{
     height: calc((100% / 10) - 4px);
     width: calc((100% / 10) - 4px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
 }
 
 section#grid > article.cell.medium{
     height: calc((100% / 9) - 4px);
     width: calc((100% / 9) - 4px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
 }
 
 section#grid > article.cell.hard{
     height: calc((100% / 7) - 4px);
     width: calc((100% / 7) - 4px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
 }
 .cell-active{
     background-color: aqua;
+    color: black;
 }

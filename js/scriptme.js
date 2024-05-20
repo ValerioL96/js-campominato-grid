@@ -22,7 +22,7 @@ bottone.addEventListener('click', function(){
 
 })
 
-function generateNewGame (containerEl, selectEl){
+function generateNewGame (containerEl, difficultyElEl){
 
    containerEl.innerHTML = '';
 
@@ -31,7 +31,7 @@ function generateNewGame (containerEl, selectEl){
       let numbersCells;
       let classAdd;
    
-      switch(selectEl.value){
+      switch(difficultyEl.value){
    
          //con difficoltà 1 => 100 caselle, con un numero compreso tra 1 e 100, divise in 10 caselle per 10 righe;   
    
@@ -78,6 +78,8 @@ function generateNewGame (containerEl, selectEl){
 
               
               //Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
+
+               cellEl.append(i);
 
                  //- creo una funzione che mi permette di colorare la casella quando ci clicco sopra.
 
