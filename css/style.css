@@ -1,16 +1,22 @@
 
+
+body{
+    background-color: blue;
+}
+
 .flex{
     display: flex;   
 }
 
 
 header{
+    width: 100%;
     background-color: white;
-    height: 100px;
     justify-content: space-between;
 }
 
 header>img{
+    width: 100px;
     padding: .5rem 3rem;
 }
 
@@ -21,21 +27,28 @@ header>button{
 }
 
 main{
-    height: calc(100vh - 100px);
-    background-color: blue;
+    padding:2rem ;
     color: white;
+}
+
+section#grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    border: solid white;
+    height: 500px;
+    width: 500px;
 }
 
 .grid-active{
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    border: solid white;
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
 }
 
-.cell{
+section#grid > article.cell{
     height: calc(100% / 10);
     width: calc(100% / 10);
     border: solid white;
